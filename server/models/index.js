@@ -9,6 +9,7 @@ const Sessions_holidays = require('./sessions_holidays');
 const Cuisine = require('./cuisine');
 const Cooking = require('./cooking');
 const FoodMenus = require('./food_menus');
+const Intents = require('./intents');
 //Connection
 const connectDb = () => {
   return mongoose.connect(DATABASE_URL,{useNewUrlParser: true, useUnifiedTopology: true });
@@ -20,7 +21,8 @@ const models = {
     Sessions_holidays,
     Cuisine,
     Cooking,
-    FoodMenus
+    FoodMenus,
+    Intents
 
 };
 

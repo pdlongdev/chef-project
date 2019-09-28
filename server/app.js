@@ -45,7 +45,8 @@ connectDb().then(async () => {
       models.Sessions_holidays.deleteMany({}),
       models.Cuisine.deleteMany({}),
       models.Cooking.deleteMany({}),
-      models.FoodMenus.deleteMany({})
+      models.FoodMenus.deleteMany({}),
+      models.Intents.deleteMany({})
     ]);
   }
 });
