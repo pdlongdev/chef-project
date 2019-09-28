@@ -43,7 +43,8 @@ connectDb().then(async () => {
       models.Ingredients.deleteMany({}),
       models.Categories.deleteMany({}),
       models.Sessions_holidays.deleteMany({}),
-      models.Cuisine.deleteMany({})
+      models.Cuisine.deleteMany({}),
+      models.Cooking.deleteMany({})
     ]);
   }
 });

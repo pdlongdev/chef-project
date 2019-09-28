@@ -5,6 +5,7 @@ const ingredientsController = require('../controllers/IngredientsController')
 const categoriesController = require('../controllers/CategoriesController')
 const holidaysController = require('../controllers/Sessions_HolidaysController')
 const cuisineController = require('../controllers/CuisineController')
+const cookingController = require('../controllers/CookingController')
 /* GET home page. */
 router.get('/', ingredientsController.initData);
 router.get('/ingredients', ingredientsController.getAll);
@@ -13,5 +14,7 @@ router.get('/init-holidays', holidaysController.initData);
 router.get('/holidays', holidaysController.getAll);
 router.get('/init-cuisine', cuisineController.initData);
 router.get('/cuisine', cuisineController.getAll);
+router.get('/init-cooking', cookingController.initData);
+router.get('/cooking', cookingController.getAll);
 
 module.exports = router;
