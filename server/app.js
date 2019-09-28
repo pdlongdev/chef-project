@@ -41,7 +41,8 @@ connectDb().then(async () => {
   if (eraseDatabaseOnSync) {
     await Promise.all([
       models.Ingredients.deleteMany({}),
-      models.Categories.deleteMany({})
+      models.Categories.deleteMany({}),
+      models.Sessions_holidays.deleteMany({})
     ]);
   }
 });
