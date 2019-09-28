@@ -40,7 +40,8 @@ const eraseDatabaseOnSync = true;
 connectDb().then(async () => {
   if (eraseDatabaseOnSync) {
     await Promise.all([
-      models.Ingredients.deleteMany({})
+      models.Ingredients.deleteMany({}),
+      models.Categories.deleteMany({})
     ]);
   }
 });

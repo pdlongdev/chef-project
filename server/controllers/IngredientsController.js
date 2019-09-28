@@ -36,7 +36,7 @@ const getAll = async (req,res) => {
 }
 // const findById = (req,res) => {
 //     Ingredients
-//         .find()
+//         .find
 // }
 module.exports = {
     initData,
