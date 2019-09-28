@@ -1,5 +1,4 @@
 const Ingredients = require('../models/Ingredients');
-const mongose = require('mongoose');
 const initData = (req,res) => {
     Ingredients
         .insertMany([

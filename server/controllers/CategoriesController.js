@@ -1,5 +1,4 @@
-const Categories = require('../models/Categories');
-const mongose = require('mongoose');
+const Categories = require('../models/categories');
 const initData = (req,res) => {
     Categories
         .insertMany([

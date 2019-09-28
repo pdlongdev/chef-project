@@ -1,31 +1,31 @@
-const Sessions_Holidays = require('../models/sessions_holidays');
+const Cuisine = require('../models/cuisine');
 const initData = (req,res) => {
-    Sessions_Holidays
+    Cuisine
         .insertMany([
             {
-                name: "Tết",
+                name: "Việt Nam",
             },
             {
-                name: "Giáng Sinh",
+                name: "Nhật Bản",
             },
             {
-                name: "SInh Nhật",
+                name: "Trung Quốc",
             },
             {
-                name: "Halloween",
+                name: "Hàn Quốc",
             },
             {
-                name: "Lễ hỏi - Cưới",
+                name: "Nga",
             },
             {
-                name: "Valentine",
+                name: "Ấn Độ",
             }
         ])
         .catch( err => console.log(err));
 }
 const getAll = async (req,res) => {
-    const sessions_Holidays = await  Sessions_Holidays.find({})
-    res.send(sessions_Holidays)
+    const cuisine = await  Cuisine.find({})
+    res.send(cuisine)
 }
 // const findById = (req,res) => {
 //     Ingredients

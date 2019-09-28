@@ -4,8 +4,9 @@ const DATABASE_URL = "mongodb://localhost:27017/chef_db";
 //Models
 const Menus = require('./menus');
 const Ingredients = require('./Ingredients');
-const Categories = require('./Categories');
+const Categories = require('./categories');
 const Sessions_holidays = require('./sessions_holidays');
+const Cuisine = require('./cuisine');
 
 //Connection
 const connectDb = () => {
@@ -15,7 +16,8 @@ const models = {
     Menus,
     Ingredients,
     Categories,
-    Sessions_holidays
+    Sessions_holidays,
+    Cuisine
 
 };
 

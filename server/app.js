@@ -42,7 +42,8 @@ connectDb().then(async () => {
     await Promise.all([
       models.Ingredients.deleteMany({}),
       models.Categories.deleteMany({}),
-      models.Sessions_holidays.deleteMany({})
+      models.Sessions_holidays.deleteMany({}),
+      models.Cuisine.deleteMany({})
     ]);
   }
 });
