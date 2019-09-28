@@ -6,3 +6,4 @@ const CookingSchema = new mongoose.Schema({
 const Cooking = mongoose.model('cooking',CookingSchema);
 module.exports = Cooking;
 
+

@@ -10,6 +10,7 @@ const Cuisine = require('./cuisine');
 const Cooking = require('./cooking');
 const FoodMenus = require('./food_menus');
 const Intents = require('./intents');
+const Recipes = require('./recipes');
 //Connection
 const connectDb = () => {
   return mongoose.connect(DATABASE_URL,{useNewUrlParser: true, useUnifiedTopology: true });
@@ -22,7 +23,8 @@ const models = {
     Cuisine,
     Cooking,
     FoodMenus,
-    Intents
+    Intents,
+    Recipes
 
 };
 
